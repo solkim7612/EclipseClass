@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script>
+	function getList(){
+		//html() : div() 안의 내용, html("abc"): abc 
+		//(): 태그, . : 클래스 , #: id
+		$("#wrap").html("상품리스트");
+	}
+</script>
+</head>
+
+<body>
+	<div id="wrap">
+	</div>
+	
+	<button onclick="getList()">상품조회</button>
+</body>
+</html>

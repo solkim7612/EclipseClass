@@ -1,0 +1,7 @@
+package day10;
+
+import javax.servlet.http.HttpServlet;
+
+public class El1Servlet extends HttpServlet{
+
+}

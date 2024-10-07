@@ -1,0 +1,41 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@page import="day11.PageHandler"%>s
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h2>게시판 글 목록</h2>
+	
+	
+	
+	<h2>페이징 관련 데이터</h2>
+	<% PageHandler handler=(PageHandler) request.getAttribute("handler"); %>
+	
+	
+	
+	
+	<%
+	for(int i=handler.getGrpStartPage(); i<=handler.getGrpEndPage(); i++){
+	%>
+	[<a href="/day11/list?p=<%= i%>"><%=i %></a>]
+	<%
+	}
+	%>
+	
+	<% if(handler.getCurrentGrp()>1){
+		%>
+	[이전]	
+	<% } %>
+	
+	<!-- 다음 -->
+	<% if(handler.getTotalPage()>handler.getGrpEndPage()){
+		%>	
+	[다음]
+	<% } %>
+</body>
+</html>

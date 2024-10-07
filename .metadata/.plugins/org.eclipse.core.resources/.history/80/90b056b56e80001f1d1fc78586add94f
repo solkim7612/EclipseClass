@@ -1,0 +1,7 @@
+package day11;
+
+import javax.servlet.http.HttpServlet;
+
+public class ListServlet extends HttpServlet{
+
+}

@@ -1,0 +1,10 @@
+
+
+--시퀀스 만들기 (1001  부터 순차적으로 증가된 순번을 얻어올 수 있다)
+create sequence  orderseq start with 1001;
+
+--시퀀스 가져오기
+select orderseq.nextval from dual;
+
+--데이터 입력시 시퀀스를 사용하기 
+insert into testtbl values( orderseq.nextval , ? ,? );

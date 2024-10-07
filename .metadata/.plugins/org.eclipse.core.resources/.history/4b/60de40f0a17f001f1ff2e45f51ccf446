@@ -1,0 +1,15 @@
+package day10;
+
+import java.util.ArrayList;
+
+public class AcornService {
+	public ArrayList<Acorn> getList(){
+		ArrayList<Acorn> list =new ArrayList<>();
+		list.add(new Acorn("kim", "123","홍"));
+		list.add(new Acorn());
+		list.add(new Acorn());
+		list.add(new Acorn());
+		list.add(new Acorn());
+		list.add(new Acorn());
+	}
+}

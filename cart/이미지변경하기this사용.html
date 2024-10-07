@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+    <style>
+
+        img{
+            width: 100px;
+            height: 100px; 
+            display: block;           
+        }  
+    </style>
+    <script>
+      function a(){
+    	 let cat=  document.querySelector("#cat");
+    	 cat.src="q.jfif";
+      }
+         
+      
+      function b(){
+    	 let cat=  document.querySelector("#cat");
+     	 cat.src="q2.jfif";
+      }
+      
+      
+      function c(obj){
+    	  obj.src="q.jfif"
+      }
+      
+      
+      function d(obj){
+    	  obj.src="q2.jfif"
+      }
+    </script>
+</head>
+<body>    
+
+ 
+
+<img src="q.jfif"  id="cat" onmouseover="a()"  onmouseout="b()">
+<img src="q2.jfif"  onmouseover="c(this)"  onmouseout="d(this)">
+  
+</body>
+</html>

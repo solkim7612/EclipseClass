@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script>
+	//$(document).ready(콜백함수);
+	$(document).ready(function(){
+		//alert("로드완료");
+		$("#btn2").click(function(){
+			$("#wrap").css("color", "red");
+		});
+	});
+	
+</script>
+
+</head>
+<body>
+	<div id="wrap"> css 변경 </div>
+	<button onclick="changingCss()">스타일 변경1</button>
+	<button id="btn2">스타일 변경2</button>
+</body>
+</html>

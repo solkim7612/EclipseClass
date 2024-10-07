@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        //고차함수 higer Function 
+        function fun1(){
+            let str="";            
+            for( let i=0; i<5; i ++){
+                str += i +"-";
+            }
+            return str;
+        }
+
+        
+        function fun2(){
+            let str="";
+            for( let i=0;i<3; i++){
+                str+= i+",";
+            }            
+            return str;
+        }
+        
+        
+        
+        console.log( fun1());
+        console.log( fun2());
+        //위의 2개 함수를 한 개로 함수로 만들었음 
+        
+        
+        function higherF( n, f ){     //반복횟수,실행할 코드를 함수를 받겠다 (콜백함수: 매개변수로 전달되는 함수)
+            let str="";
+            for( let i=0;i< n;i++){
+                 str +=f(i);
+            }
+            alert(str);
+        }
+
+        
+        
+        //익명함수로 전달
+         higherF( 5,  function( i){
+              return  i+"-"; 
+         } );
+      
+
+
+         higherF( 3,  function( i){
+              return i+",";
+            } );
+
+        
+         //함수를 별도로 작성하여 전달
+        higherF(3 , test );
+        
+        function test( i ){
+            return   i + ":";
+        }
+        
+         
+         
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script>
+function checkId() {
+	//js: 요소의 속성 가져오기(value)
+	//1
+	let idTag=document.getElementById("id");
+	alert(idTag);
+	//2
+	let idValue=idTag.value;
+	alert(idValue);
+	
+	if(idValue==""){
+		alert("아이디를 입력하세요");
+	}
+	
+	
+}
+</script>
+
+<body>
+	아이디<input type="text" id="id">
+	<button onclick="checkId()">등록</button>
+	
+
+</body>
+</html>

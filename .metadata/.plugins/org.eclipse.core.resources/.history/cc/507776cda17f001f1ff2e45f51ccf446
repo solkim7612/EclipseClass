@@ -1,0 +1,9 @@
+package day10;
+
+import java.util.ArrayList;
+
+public class AcornService {
+	public ArrayList<Acorn> getList(){
+		ArrayList<Acorn> list =new ArrayList<>();
+	}
+}

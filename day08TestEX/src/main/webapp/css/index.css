@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+}
+
+.logo{
+	display:flex;
+	justify-content: center;
+}
+
+.log{
+	display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.log:hover {
+    text-decoration: underline;
+}
+
+.log a {
+    text-decoration: none;
+    color: white;
+}
+
+/* 메인 컨테이너 설정 */
+main {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 검색 바 스타일링 */
+.search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search input[type="text"] {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.searcht[type="text"]:focus {
+    outline: none;
+    border-color: #333;
+}
+
+/* 카테고리 메뉴 스타일링 */
+.listbtn {
+    display: flex;
+    justify-content: center;
+}
+
+.listbtn ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.listbtn li {
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.listbtn li:hover {
+    background-color: #333;
+    border-color: #333;
+}
+
+.listbtn li:hover a {
+    color: #fff; /* li 요소가 호버될 때 내부 a 태그의 색상 변경 */
+}
+
+.listbtn a {
+    text-decoration: none;
+    color: black;
+}
+.category-list {
+    display: none; /* 처음에 모든 카테고리의 상품 목록을 숨김 */
+    margin-top: 20px;
+}
+.category-list ul {
+    list-style: none;
+    padding: 0;
+    width: 20%;
+}
+.category-list li {
+    display: flex; /* 아이템과 버튼을 같은 줄에 배치 */
+    align-items: center; /* 수직 정렬 */
+    justify-content: space-between; /* 아이템과 버튼 사이에 간격 */
+    margin: 5px 0; /* 아이템 사이에 간격 추가 */
+}
+
+button{
+	padding: 5px 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px; /* 버튼과 아이템 사이에 간격 추가 */
+}
+
+button:hover {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+}

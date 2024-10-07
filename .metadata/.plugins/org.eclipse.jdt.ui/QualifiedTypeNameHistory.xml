@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+    <fullyQualifiedTypeName name="java.lang.Readable"/>
+    <fullyQualifiedTypeName name="day03.Acorn"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="org.eclipse.jdt.internal.compiler.batch.Main"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="javax.print.DocFlavor"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+</qualifiedTypeNameHistroy>

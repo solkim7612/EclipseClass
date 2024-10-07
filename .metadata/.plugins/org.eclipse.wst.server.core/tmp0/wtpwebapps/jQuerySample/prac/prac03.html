@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	function changingCss() {
+		// "wrap" 요소를 선택하고 텍스트 색상을 빨간색으로 변경
+		let wrapTag = document.querySelector("#wrap");
+		wrapTag.style.color = "red";
+	}
+	
+	// 페이지 로드 완료 시 실행되는 코드
+	window.addEventListener("load", function(){
+		let btn = document.querySelector("#btn2");
+		// btn2 버튼을 클릭하면 "wrap"의 텍스트 색상을 녹색으로 변경
+		btn.addEventListener("click", function(){
+			document.querySelector("#wrap").style.color = "green";
+		});
+	});
+</script>
+</head>
+<body>
+	<div id="wrap"> css 변경 </div>
+	<button onclick="changingCss()">스타일 변경1</button>
+	<button id="btn2">스타일 변경2</button>
+</body>
+</html>

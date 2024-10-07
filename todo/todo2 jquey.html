@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- jquery cdn-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <style>
+        .wrap{
+            max-width: 500px;
+            width: 100%;
+            margin: 0 auto;
+            box-sizing: border-box;
+            padding: 20px;
+            border:1px solid black;
+
+        }
+
+
+        header{
+            padding: 10px;
+            border-radius: 5px;
+            background-color: gainsboro;
+            text-align: center;
+            margin-bottom: 30px;
+
+
+        }
+
+        .todoEditWrap{         
+            display: flex;    
+            border:1px solid black;    
+            margin-bottom: 50px;    
+        }
+
+
+        .todoEditWrap input{
+          flex:1;     
+          padding: 15px;      
+        }
+
+        .todoEditWrap button{
+            width:80px;
+            height: 60px;
+        }
+
+        
+        .search input{
+            width: 100%;
+            height: 40px;
+        }
+
+        .todoItemWrap{
+           
+           margin-top: 30px;
+           border-top: 1px solid black;
+           padding: 10px;
+        }
+
+        .todoItem{
+            display: flex;
+            margin-bottom: 5px;
+            padding: 5px;
+            align-items: center;
+            
+        }
+
+        .title_col{
+            flex:1;
+        }
+
+        .todoItem button{
+            border-radius: 20px;
+            background-color: gainsboro;
+            border:none;
+            padding: 5px;
+            width: 60px;
+            margin: 5px;
+        }
+
+
+        .date_col{
+            font-size: 12px;
+            color:gray;
+        }
+    </style>
+
+    
+
+<script>
+              
+
+
+	
+    $(document).ready(function () {   
+    	
+    	//body에 요소가 없을 때 이벤트 리스너 추가 하는 방법  	    	
+    	//이벤트 추가
+        $(".todoItemWrap").on("click", ".delBtn", function() {
+        	//this는 버튼을 의미함  버튼과 가장가까운 .todoItem 선택해서 삭제
+            $(this).closest(".todoItem").remove();       
+     	 });
+                
+
+        let currentDate =  new Date().toLocaleString();      
+        $("#cDate").html( currentDate);
+        
+        
+        
+        $("#regBtn").click(function () { 
+
+            let itemWrap = $(".todoItemWrap");
+            let inputText = $(".todoEditWrap input").val();
+
+            if (inputText.trim() === "") {
+                alert("입력");
+                return;
+            }
+
+            // ${}` 구문은 템플릿 리터럴 안에서 변수나 표현식을 포함하는 데 사용함
+            // ${inputText}:  => 이 부분은 변수 inputText의 값이 문자열로 변환되어  html내에 삽입됨
+
+            let currentDate  = new Date().toLocaleString();    
+
+            let item=  ` <div class="todoItem">
+                    <div class="checkbox_col"> <input type="checkbox"  /></div>
+                    <div class="title_col" >  ${inputText} </div>
+                    <div class="date_col">  ${currentDate }</div>
+                    <div  class="btn_col" ><button class="delBtn" >삭제</button></div>
+                </div>`;
+
+            
+            itemWrap.append(item);            
+            //초기화
+            $(".todoEditWrap input").val("");
+        });
+ 
+ 
+
+    });
+</script>
+
+
+</head>
+<body>
+
+    <div class="wrap">
+
+        <!-- header-->
+       <header>
+            <h2>오늘은  😊  </h2>
+            <div id="cDate">  Mon jan 02</div>
+       </header>
+
+       <!-- todo 작성 영역 -->
+       <div class="todoEdit">
+        <h4>새로운 todo 작성하기🖊</h4>
+        <div class="todoEditWrap">
+            <input type="text"  placeholder="일정추가" ><button id="regBtn">등록</button>
+        </div>
+       </div>
+
+       <!-- todo list-->
+
+       <div class="todoList">
+            <h4>Todo List</h4>
+            <!-- 검색영역-->
+            <div class="search"> 
+                <input type="text"  placeholder="검색어를 입력하세요">
+            </div>
+
+            <!-- 일정 item 영역-->
+            <div  class="todoItemWrap"> 
+
+                <!--item -->
+                <div class="todoItem">
+                    <div class="checkbox_col"> <input type="checkbox"  /></div>
+                    <div class="title_col">   </div>
+                    <div class="date_col"> </div>
+                    <div  class="btn_col" ><button class="delBtn">삭제</button></div>
+                </div>
+            </div>
+       </div>
+
+    </div>    
+</body>
+</html>
+ 
+ 
+
+
+ 
+

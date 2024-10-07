@@ -1,0 +1,9 @@
+package day10;
+
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+@WebServlet("/reg1")
+public class regReivewServlet extends HttpServlet{
+	
+}

@@ -1,0 +1,9 @@
+package day10;
+
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+@WebServlet("/del1")
+public class delReiviewServlet1 extends HttpServlet{
+
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modules>
+  <module moduleId="org.eclipse.jst.jee.server:blind" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:EL_JSTLSample" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:jQuerySample" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:day05" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:sessionSurvey" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:day03" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:pagePrj" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:day04" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:ajaxReview" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:day09" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:day08" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:test" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:AddressPrj" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Lotto" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:day01" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:acornMVC" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:day10" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:day11" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:blindWeb" serverId="Tomcat v9.0 Server at localhost"/>
+</modules>

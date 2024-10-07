@@ -1,0 +1,31 @@
+ 
+"Oracle, MSSQL, MySQL과 같은 데이터베이스 벤더들은 자바 데이터베이스 연결 인터페이스(JDBC)를 구현한 DBMS를 사용할 수 있는 라이브러리를 제공한다."
+
+1. MySQL
+드라이버 클래스: com.mysql.cj.jdbc.Driver
+JAR 파일 이름: mysql-connector-java-8.0.30.jar
+
+2. Oracle
+드라이버 클래스: oracle.jdbc.OracleDriver
+JAR 파일 이름: ojdbc8-19.8.0.0.jar 
+ 
+3. PostgreSQL
+드라이버 클래스: org.postgresql.Driver
+JAR 파일 이름: postgresql-42.5.0.jar 
+ 
+4. Microsoft SQL Server
+드라이버 클래스: com.microsoft.sqlserver.jdbc.SQLServerDriver
+JAR 파일 이름: mssql-jdbc-9.4.1.jre8.jar
+ 
+5. SQLite
+드라이버 클래스: org.sqlite.JDBC
+JAR 파일 이름: sqlite-jdbc-3.36.0.3.jar
+ 
+6. H2 Database
+드라이버 클래스: org.h2.Driver
+JAR 파일 이름: h2-2.1.214.jar
+ 
+7. MariaDB
+드라이버 클래스: org.mariadb.jdbc.Driver
+JAR 파일 이름: mariadb-java-client-3.0.6.jar
+ 

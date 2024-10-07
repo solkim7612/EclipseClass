@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script>
+function getData() {
+	alert("데이터 요청 중...");
+	
+	$.ajax({
+		type: "get",
+		url: "/day09/foodjson4",
+		success: function(data) {
+			// 테이블에 기존에 있던 데이터 제거
+			 $("#result").empty();
+			
+			//document.querySelector("#result").innerHTML ="";
+			
+			// JSON 데이터의 배열을 순회하며 테이블 행을 생성
+			for (let i = 0; i < data.length; i++) {
+				let food = data[i];
+				let str = `<tr><td>${food.name}</td><td>${food.price}</td></tr>`;
+				$("#result").append(str);
+			}
+		},
+		error: function(err) {
+			alert("요청에 실패했습니다.");
+		}
+	});
+}
+</script>
+</head>
+<body>
+
+<div id="wrap">
+	<h2>음식 데이터</h2>
+	<table border="1">
+		<thead>
+			<tr>
+				<th>음식 이름</th>
+				<th>가격</th>
+			</tr>
+		</thead>
+		<tbody id="result">
+			<!-- 데이터를 여기에 추가할 예정 -->
+		</tbody>
+	</table>
+</div>
+
+<button onclick="getData()">데이터 가져오기</button>
+
+</body>
+</html>

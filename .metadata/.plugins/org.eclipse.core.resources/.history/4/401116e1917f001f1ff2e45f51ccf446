@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script>
+function regReivew() {
+	//alert("dksk");
+	
+	let reivew= document.querySelector("#reivew").value;
+	alert(reivew);
+	
+	let dataValue={id: "1", content: reivew};
+	console.log(dataValue);
+	
+	/*
+	$.ajex({
+		type: "post",
+		url:"/day10/reg2",
+		data:dataValue,
+		success: function (a) { 
+			console.log(a);
+		},
+		error: function () {
+			
+		}
+	});
+} */
+</script>
+
+</head>
+<body>
+
+<h2>리뷰</h2>
+<input type="text" id="reivew">
+<button onclick="regReivew()">등록</button>
+
+</body>
+</html>

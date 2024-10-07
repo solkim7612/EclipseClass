@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+.main_post {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    width: 80%;
+    max-width: 1200px;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+}
+
+.main_post_header {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.main_post_header h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.UserInfo {
+    display: flex;
+    gap: 15px;
+    color: #555;
+    font-size: 14px;
+}
+
+.main_post_main_content {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.main_post_main_URL {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+.main_post_main_URL img {
+    width: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.main_post_footer {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.main_post_footer_replyCount {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.main_post_footer_replyContent li {
+    display: flex; /* li를 flex 컨테이너로 설정하여 내부 요소를 배치 */
+    justify-content: space-between; /* 내용과 버튼을 양쪽 끝에 배치 */
+    align-items: center; /* 세로 중앙 정렬 */
+    padding: 10px;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.main_post_footer_replyContent li div {
+    flex-grow: 1; /* 내용 div가 가능한 공간을 차지하도록 설정 */
+    display: flex;
+    flex-direction: column;
+}
+
+.main_post_footer_OnlyApp {
+    background-color: #f7f7f7;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 13px;
+    color: #757575;
+}
+
+.main_post_footer_OnlyApp>input{
+	width: 100%;
+	border: none;
+}
+
+.main_post_footer_replyContent {
+    margin-top: 20px;
+}
+
+.main_post_footer_replyContent h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.main_post_footer_replyContent ul {
+    list-style: none;
+    padding: 0;
+}
+
+.main_post_footer_replyContent li {
+    padding: 10px;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.main_post_footer_replyContent li div {
+    display: flex;
+    flex-direction: column;
+}
+
+.main_post_footer_replyContent li strong {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.main_post_footer_replyContent li em {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+}
+
+.newCommentBTN {
+	width: 53.53px;
+    margin-left: 5px; /* 버튼 간 간격 */
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #f7f7f7; /* 버튼 배경색 */
+    border: 1px solid #ccc; /* 버튼 테두리 */
+    border-radius: 4px; /* 버튼 모서리 둥글게 */
+}
+
+.buttonContainer {
+   	display: flex;
+    justify-content: flex-end;
+    gap: 5px; /* 버튼 간 간격 */
+}

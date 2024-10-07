@@ -1,0 +1,7 @@
+package webPrj;
+
+import javax.servlet.http.HttpServlet;
+
+public class AcornServlet extends HttpServlet{
+
+}

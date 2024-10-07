@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	function delReivew() {
+		alert("dsd");
+		
+		let id="1";
+		
+	}
+</script>
+
+</head>
+<body>
+	
+	<button onclick="delReivew()">삭제</button>
+</body>
+</html>

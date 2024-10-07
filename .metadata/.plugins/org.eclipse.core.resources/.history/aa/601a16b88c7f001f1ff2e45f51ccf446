@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script>
+function regReivew() {
+	//alert("dksk");
+	
+}
+</script>
+
+</head>
+<body>
+
+<h2>리뷰</h2>
+<input type="text">
+<button onclick="regReivew()">등록</button>
+
+</body>
+</html>
